@@ -13,10 +13,12 @@ public class Main {
        int[] mass = fillMass(20);
         int max = mass[0];
         int i = 1;
-        while ( i < mass.length) {
+       if ( i < mass.length) {
+           do{
             if (mass [1]  > max) max = mass[i];
              i++;
-            }
+            }while (i < mass.length);
+       }
         System.out.println(max);
         //
         }
